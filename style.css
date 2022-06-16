@@ -86,7 +86,7 @@ li {
 }
 
 .bl_fv_img {
-  background-image: url(../img/hero.jpg);
+  background-image: url(img/hero.jpg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
