@@ -62,6 +62,25 @@ li {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #fff;
+  position: relative;
+}
+
+.bl_headerNav_link::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+}
+
+.bl_headerNav_link:hover::after {
+    transform-origin: left top;
+    transform: scale(1,1);
 }
 
 .bl_headerNav_item:last-child {
